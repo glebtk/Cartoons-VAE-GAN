@@ -1,0 +1,13 @@
+/.idea/
+/venv/
+/__pycache__/
+/data/frames/
+/data/test_frames/
+/tb/
+/trains/
+average_image.png
+test_model.py
+/imgs_test/*
+__test.py
+mean_std.py
+test_model.py

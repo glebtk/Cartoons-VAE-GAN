@@ -1,0 +1,34 @@
+# Параметры модели:
+in_channels: 3
+image_size: 128
+embedding_size: 1024
+weights_init: null
+
+# Загрузка и сохранение чекпоинтов:
+load_model: false
+save_model: false
+
+# Гиперпараметры обучения:
+num_epochs: 100
+vae_learning_rate: 3e-4
+disc_learning_rate: 3e-4
+batch_size: 64
+num_workers: 2
+
+# Веса функций потерь:
+mse_weight: 1.0
+kld_weight: 1.0
+adv_weight: 1.0
+
+# Гиперпараметры KL annealing:
+kld_weight_start: 0.0
+kld_annealing_steps: 1
+
+# Пути к данным и чекпоинтам:
+dataset_path: "./data/frames"
+test_path: "./data/test_frames"
+checkpoint_dir: "./trains"
+checkpoint_name: "vaegan.pth.tar"
+
+# Фиксированный seed для экспериментов:
+seed: 42
