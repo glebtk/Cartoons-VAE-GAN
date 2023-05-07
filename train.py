@@ -1,13 +1,13 @@
 import yaml
 import argparse
 from tqdm import tqdm
-from vae_utils import *
+from utils import *
 from torch import optim, nn
 from torch.utils.data import DataLoader
 from torchvision.utils import make_grid
-from vae_model import VAE, Discriminator
+from model import VAE, Discriminator
 import torchvision.transforms as transforms
-from vae_dataset import CartoonFramesDataset
+from dataset import CartoonFramesDataset
 from torch.cuda.amp import GradScaler, autocast
 from torch.utils.tensorboard import SummaryWriter
 
